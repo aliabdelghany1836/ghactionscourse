@@ -10,5 +10,9 @@ jobs:
     steps:
       - name: Print a welcome message 
         run: echo "Welcom to our first GitHub Acetion work"
-  
+      - name: CheckOut repository
+        uses: actions/checkout@v7.0.0
+      - name: LIset respository files 
+        run: ls -la
+
       
