@@ -2,17 +2,17 @@ on:
   workflow_dispatch:
     inputs:
       environment:
-        description:"Choose enviroment"
-        required: turn
+        description: "Choose environment"
+        required: true
         default: "staging"
-        type: choice 
+        type: choice
         options:
-         - staging 
-         - production
-        
+          - staging
+          - production
+
 jobs:
   deploy:
     runs-on: ubuntu-22.04
     steps:
       - name: Deploy application
-        run: echo "Deploying the application. " 
+        run: echo "Deploying the application."
